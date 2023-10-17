@@ -1,0 +1,99 @@
+:root {
+    --blue-gray: #ecf0f1;
+    --pale-blue: #2c3e50;
+    --mid-gray: #999;
+    --jean-blue: #3b5875;
+    --light-blue: #95afc0;
+    --sky-blue: #dff9fb;
+    --dark-sky-blue: #c7ecee;
+    --light-gray: #ccc;
+}
+html{
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+#header{
+    background-color: var(--blue-gray);
+    padding: 1.25rem;
+}
+
+#header .header-wrapper .logo{
+    font-size: 1.3rem;
+}
+
+#header .header-wrapper .logo a{
+    color: black;
+    letter-spacing: .5rem;
+    font-weight: bold;
+}
+
+#header .header-wrapper .user-action{
+    gap: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#header .header-wrapper .user-action .logout-btn{
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+#header .header-wrapper .user-action a{
+    color: black;
+    margin-right: 1rem;
+    text-decoration: none;
+    
+}
+
+#header .header-wrapper .user-action a:hover{
+    text-decoration: underline;
+}
+
+
+/* loader backdrop */
+
+.loader-backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+/* loader2 styling */
+
+#loader2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader2 > div{
+    height: 50px;
+    width: 50px;
+    border: 5px solid rgb(231, 7, 7);
+    border-top: 5px solid bisque;
+    border-bottom: 5px solid bisque;
+    border-radius: 50%;
+    animation-name: spinner2;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+
+}
+
+@keyframes spinner2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

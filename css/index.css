@@ -1,0 +1,26 @@
+
+
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #ECF0F1;
+
+}
+
+.left-content {
+    display: flex;
+    gap: 2rem;
+    flex-basis: 65%;
+}
+
+.input-wrapper {
+    width: 80%;
+}
+
+.right-content {
+    display: flex;
+    gap: 2rem;
+    margin-top: 7px;
+}
